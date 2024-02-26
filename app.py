@@ -7,7 +7,10 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 
 #reading the data from csv
-df = pd.read_csv('~/Downloads/Streamlit App/Transfer.csv')
+file_path = os.path.expanduser('~/Downloads/Streamlit App/Transfer.csv')
+
+# Load the CSV file
+df = pd.read_csv(file_path)
 df['time'] = pd.to_datetime(df['time'], unit='s')
 df['date'] = df['time'].dt.date
 st.set_page_config(layout="wide")

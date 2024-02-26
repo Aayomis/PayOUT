@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 
 #reading the data from csv
-file_path = "/Users/apple/Downloads/Streamlit App/Transfer.csv"
+file_path = "https://raw.githubusercontent.com/Aayomis/PayOUT/main/Transfer.csv"
 print("Current Working Directory:", os.getcwd())
 # Load the CSV file
 df = pd.read_csv(file_path)

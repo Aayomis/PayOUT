@@ -8,8 +8,8 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 
 #reading the data from csv
-file_path = os.path.expanduser('~/Downloads/Streamlit App/Transfer.csv')
-
+file_path = "/Users/apple/Downloads/Streamlit App/Transfer.csv"
+print("Current Working Directory:", os.getcwd())
 # Load the CSV file
 df = pd.read_csv(file_path)
 df['time'] = pd.to_datetime(df['time'], unit='s')
